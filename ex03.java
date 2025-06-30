@@ -3,14 +3,17 @@ import java.util.Scanner;
 public class ex03{
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
+        int num;
+        System.out.println("Digite um número inteiro: ");
+        num = sc.nextInt();
 
-        int a, b, c, d, diferenca;
-
-        a = sc.nextInt();
-        b = sc.nextInt();
-        c = sc.nextInt();
-        d = sc.nextInt();diferenca = (a * b - c * d);
-
-        System.out.println(diferenca);
+        if(num < 0){
+            System.out.println("Este número é negativo!");
+        }else if(num > 0){
+            System.out.println("Este número é positivo!");
+        }else{
+            System.out.println("Digite um número inteiro");
+        }
+        sc.close();
     }
 }

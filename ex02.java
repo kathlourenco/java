@@ -1,13 +1,19 @@
-import java.util.Locale;
 import java.util.Scanner;
 
-public class ex02 {
-    public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
+public class ex02{
+    public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
-        double r, area;
-        r = sc.nextDouble();
-        area =  3.14159 * (r * r);
-        System.out.println("A área do círculo é: " + area);
+        int hora;
+        System.out.println("Que horas são?");
+        hora = sc.nextInt();
+
+        if(hora < 12 && hora >= 0){
+            System.out.println("Bom dia!");
+        } else if(hora >= 12 && hora < 24){
+            System.out.println("Boa tarde!");
+        } else{
+            System.out.println("Digite uma hora válida");
+        }
+        sc.close();
     }
-}
+ }

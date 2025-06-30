@@ -2,17 +2,16 @@ import java.util.Scanner;
 
 public class ex04{
     public static void main(String [] args){
-    Scanner sc = new Scanner(System.in);
+        int num;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite um número: ");
+        num = sc.nextInt();
 
-    int num, horas;
-    num = sc.nextInt();
-    horas = sc.nextInt();
-
-    double valor, salario;
-    valor = sc.nextDouble();
-    salario =  horas * valor;
-
-    System.out.println("Numero: " + num);
-    System.out.println("Salário: " + salario);
+        if(num % 2 == 0){
+            System.out.println("Este número é par!");
+        }else{
+            System.out.println("Este número é impar!");
+        }
+        sc.close();
     }
 }
